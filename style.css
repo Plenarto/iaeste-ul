@@ -1,0 +1,281 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  padding:0;
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVBAR */
+
+#main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0077bb;
+  overflow: hidden;
+  z-index: 2;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #0089D8;}
+
+
+ul.topnav li.icon {display: none;}
+
+ul.topnav li.fb {
+    float: right;
+    display: inline-block;
+  }
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* Ukrywa z paska menu znaczek fb */
+
+@media screen and (max-width:680px) {
+  ul.topnav li.fb {
+    display: none;
+  }
+}
+/* Fix bardzo małego ekranu i znaczka fb */
+@media screen and (max-width:310px) {
+  ul.topnav li a {
+    padding: 14px 5px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* IKONKA MAŁEGO MENU */
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: #f2f2f2;
+  box-shadow:
+    0 0.25em 0 0 #f2f2f2,
+    0 0.5em 0 0 #f2f2f2;
+}
+
+/* KONIEC - IKONKA MAŁEGO MENU */
+
+
+
+
+/* NAVBAR KONIEC */
+/* NAVBAR KONIEC */
+/* NAVBAR KONIEC */
+/* NAVBAR KONIEC */
+
+h1 {
+  color: #FFA300;
+  font-weight: 900;
+  font-size: 7vmin;
+  padding-bottom: 1vmin;
+  text-align: center;
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+}
+
+section {
+  font-weight: 400;
+  font-size: 4vmin;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.container {
+  margin: 0 15%;
+}
+
+
+
+#raleway {
+  display:block;
+  overflow:auto;
+  background-color: #eee;
+}
+
+#raleway .container {
+    margin: 0 10%;
+}
+
+
+#raleway .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#logo-big {
+  float: left;
+  max-width: 60%;
+}
+
+#raleway .opis-iaeste {
+  width: 40vw;
+}
+
+.szaro-nieb{
+  height: 10vh;
+  background: linear-gradient(to right bottom, #eee 50%, #0077bb 50%);
+}
+.nieb-bial{
+  height: 10vh;
+  background: linear-gradient(to left bottom, #0077bb 50%, #eee 50%);
+}
+
+#niebieska {
+background-color: #0077bb;
+display:block;
+overflow:auto;
+padding-bottom: 70px;
+}
+
+
+#niebieska .container {
+  margin: 0 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dlaczego {
+  width: 300px;
+  margin: 12px;
+  padding: 20px 13px;
+  border: dashed #ededed 3px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 3.5vmin;
+  color: #ededed;
+}
+
+.dlaczego img {
+  max-width: 55%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+
+}
+
+
+
+#openSans {
+  background-color: #ededed;
+  font-size: 3vmin;
+  height: 100vh;
+
+}
+
+
+/* AKORDEON */
+#accordion .ui-accordion-header-active {
+  background-color: #0077bb;
+}
+
+#accordion .ui-accordion-header {
+  font-family: 'Open Sans', sans-serif;  
+}
+
+
+#pomaranczowa {
+    background-color: #FFA300;
+    display:block;
+    overflow:auto;
+    padding-bottom: 70px;
+    font-size: 3vmin;
+
+  }
+
+#pomaranczowa h1 {
+  color: #eee;
+  font-weight: 900;
+  font-size: 7vmin;
+  padding-bottom: 1vmin;
+  text-align: center;
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+}
+
+  .szaro-pomaranczowa {
+    height: 10vh;
+    background: linear-gradient(to left bottom, #eee 50%, #FFA300 50%);
+  }
+  .pomaranczowo-szara{
+    height: 10vh;
+    background: linear-gradient(to left top, #eee 50%, #FFA300 50%);
+  }
+
+
+#szara {
+    background-color: #eee;
+    display:block;
+    overflow:auto;
+    padding-bottom: 70px;
+  }
+
+
+
+footer {
+  margin: 0px;
+  height: 100px;
+  color: white;
+  background-color: black;
+  overflow: hidden;
+}
