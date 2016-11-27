@@ -52,7 +52,7 @@ ul.topnav li.fb {
     display: inline-block;
   }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:920px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
     float: right;
@@ -62,7 +62,7 @@ ul.topnav li.fb {
 
 /* Ukrywa z paska menu znaczek fb */
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:920px) {
   ul.topnav li.fb {
     display: none;
   }
@@ -74,7 +74,7 @@ ul.topnav li.fb {
   }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:920px) {
   ul.topnav.responsive {position: relative;}
   ul.topnav.responsive li.icon {
     position: absolute;
