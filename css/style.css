@@ -147,6 +147,7 @@ section {
   display:block;
   overflow:auto;
   background-color: #eee;
+  padding-bottom: 20px;
 }
 
 #raleway .container {
@@ -172,8 +173,36 @@ section {
   width: 40vw;
 }
 
+.button_container {
+  width: 40vw;
+  margin-top: 40px;
+}
+
+
+.button_container a {
+  display: block;
+  text-decoration: none;
+  color: #eee;
+  font-size: 3.5vmin;
+    background-color: #0077bb;
+    border-radius: 15px;
+    border: solid #0077bb 2px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.button_container a:hover {
+  background-color: #eee;
+  color: #0077bb;
+  box-shadow: 0 0 0 3px rgba(0, 119, 187, 0.2);
+  font-weight: 600;
+}
+
+
 @media screen and (max-width:980px) {
-  #raleway .opis-iaeste {
+  #raleway .opis-iaeste,
+  #raleway .button_container {
     width: 70vw;
   }
 }
