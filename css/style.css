@@ -138,24 +138,29 @@ section {
 }
 
 .container {
-  margin: 0 15%;
+  margin: 0 7%;
+  text-align: center;
 }
 
 
 
-#raleway {
+#poznajmy_sie {
   display:block;
   overflow:auto;
   background-color: #eee;
   padding-bottom: 20px;
 }
 
-#raleway .container {
-    margin: 0 10%;
+#poznajmy_sie h1 {
+  padding-bottom: 0px;
+}
+
+#poznajmy_sie .container {
+   text-align: center;
 }
 
 
-#raleway .container {
+#poznajmy_sie .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -165,12 +170,17 @@ section {
 }
 
 #logo-big {
-  float: left;
   max-width: 60vw;
 }
 
-#raleway .opis-iaeste {
+#poznajmy_sie .opis-iaeste {
   width: 40vw;
+  font-size: 3.5vmin;
+}
+
+.intense {
+  color: #0077bb;
+  font-weight: 800;
 }
 
 .button_container {
@@ -184,25 +194,24 @@ section {
   text-decoration: none;
   color: #eee;
   font-size: 3.5vmin;
-    background-color: #0077bb;
-    border-radius: 15px;
-    border: solid #0077bb 2px;
-    padding: 10px 15px;
-    display: inline-block;
-    margin: 0 auto;
+  background-color: #0077bb;
+  border-radius: 15px;
+  border: solid #0077bb 2px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .button_container a:hover {
   background-color: #eee;
   color: #0077bb;
-  box-shadow: 0 0 0 3px rgba(0, 119, 187, 0.2);
   font-weight: 600;
 }
 
 
 @media screen and (max-width:980px) {
-  #raleway .opis-iaeste,
-  #raleway .button_container {
+  #poznajmy_sie .opis-iaeste,
+  #poznajmy_sie .button_container {
     width: 70vw;
   }
 }
@@ -216,7 +225,7 @@ section {
   background: linear-gradient(to left bottom, #0077bb 50%, #eee 50%);
 }
 
-#niebieska {
+#uni_lodz {
 background-color: #0077bb;
 display:block;
 overflow:auto;
@@ -224,7 +233,68 @@ padding-bottom: 70px;
 }
 
 
-#niebieska .container {
+.zarzad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.osoba {
+  min-width: 350px;
+  border: solid black 1px;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px 6px black;
+     -moz-box-shadow: 3px 3px 6px black;
+          box-shadow: 3px 3px 6px black;
+}
+
+.photo {
+  margin: 0 auto;
+  border: solid #c0c0c0 3px;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+}
+
+.prezes {
+  background-image: url("../img/prezes.jpg");
+}
+
+.wiceprezes {
+  background-image: url("../img/wiceprezes.jpg");
+}
+
+.skarbnik {
+  background-image: url("../img/skarbnik.jpg");
+}
+
+.osoba .imie {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 5vmin;
+}
+
+.osoba .funkcja {
+  color: #d3d3d3;
+}
+
+
+
+#dlaczego_warto {
+  background-color: #ededed;
+  display:block;
+  overflow:auto;
+  padding-bottom: 70px;
+}
+
+#dlaczego_warto .container {
   margin: 0 7%;
   display: flex;
   flex-wrap: wrap;
@@ -235,26 +305,21 @@ padding-bottom: 70px;
   width: 300px;
   margin: 12px;
   padding: 20px 13px;
-  border: dashed #ededed 3px;
+  border: solid #0077bb 1px;
+  -webkit-box-shadow: 5px 5px 5px gray;
+	   -moz-box-shadow: 5px 5px 5px gray;
+	        box-shadow: 5px 5px 5px gray;
   border-radius: 10px;
   text-align: center;
   font-size: 3.5vmin;
-  color: #ededed;
+  color: #0077bb;
+  font-weight: 800;
 }
 
 .dlaczego img {
   max-width: 55%;
   padding-bottom: 10px;
   padding-top: 5px;
-
-}
-
-
-
-#openSans {
-  background-color: #ededed;
-  font-size: 3vmin;
-  height: 100vh;
 
 }
 
@@ -277,6 +342,18 @@ padding-bottom: 70px;
     font-size: 3vmin;
 
   }
+
+
+#pomaranczowa .container {
+      text-align: left;
+      margin: 0 15%;
+  }
+
+@media screen and (max-width:920px) {
+  #pomaranczowa .container {
+    margin: 0 5%;
+  }
+}
 
 #pomaranczowa h1 {
   color: #eee;
