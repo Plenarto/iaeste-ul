@@ -401,19 +401,21 @@ padding-bottom: 70px;
 
 #kontakt .informacja {
     background-color: #FFA300;
-    width: 33vw;
+    width: 18vw;
     font-size: 3.5vmin;
     font-weight: 500;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 #kontakt .formularz {
-    width: 46vw;
+    width: 61vw;
     background-color: #0077bb;
     padding: 20px;
+    border-radius: 15px;
   }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:1120px) {
     #kontakt .informacja {
       width: 100vw;
       margin: 10px 0;
@@ -425,9 +427,38 @@ padding-bottom: 70px;
   }
 
 
-  .pole {
+  .pole,
+  .wiadomosc {
     width: 80%;
+    margin-bottom: 7px;
+    font-size: 3.5vmin;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
   }
+
+  .wiadomosc {
+    width: 80%;
+    resize: vertical;
+    margin-top: 1px;
+  }
+
+  input[type=submit] {
+      padding: 7px 35px;
+      background: #eee;
+      border:0 none;
+      cursor:pointer;
+      border-radius: 5px;
+      font-size: 3vmin;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+  }
+
+
+  input[type=submit]:hover {
+    background: #FFA300;
+  }
+
 
 
 

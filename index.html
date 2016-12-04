@@ -256,13 +256,17 @@
     <div class="formularz">
 
       <form id="contactform" method="POST">
-          <input type="text" name="name" placeholder="Your name">
-          <input type="email" name="_replyto" placeholder="Your email">
-          <input type="hidden" name="_subject" value="Website contact" />
-          <textarea name="message" placeholder="Your message"></textarea>
+          <input class="pole" type="text" name="name" placeholder="Twoje imię">
+          <input class="pole" type="email" name="_replyto" placeholder="Twój email">
+          <input class="pole" type="hidden" name="_subject" value="Wiadomość ze strony IAESTE UŁ" />
+          <textarea class="wiadomosc" rows="5" name="message" placeholder="Twoja wiadomość"></textarea>
+          <!-- Honeypot - zabezpiecza przed botami (wypełniają to pole i mail od nich wpada do spamu) -->
           <input type="text" name="_gotcha" style="display:none" />
-          <input type="submit" value="Send">
+          <div>
+            <input type="submit" value="Wyślij">
+          </div>
       </form>
+      <!-- JS dodający do formularza właściwy mail, spambot defence -->
       <script>
           var contactform =  document.getElementById('contactform');
           contactform.setAttribute('action', '//formspree.io/' + 'p.k.lenartowicz' + '@' + 'gmail' + '.' + 'com');
