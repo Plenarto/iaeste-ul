@@ -31,7 +31,7 @@
 <nav id="main-nav">
 
 <ul class="topnav" id="myTopnav">
-  <li id="iaeste-nav"><a href="#poznajmy_sie">IAESTE Uniwersytet Łódzki</a></li>
+  <li id="iaeste-nav"><a href="#intro">IAESTE Uniwersytet Łódzki</a></li>
   <li><a href="#poznajmy_sie">Poznajmy się</a></li>
   <li><a href="#uni_lodz">O komitecie</a></li>
   <li><a href="#dlaczego_warto">Dlaczego warto?</a></li>
@@ -54,7 +54,12 @@
   </div>
 </nav> <!-- /NAVBAR -->
 
+<!-- SEKCJA intro -->
+<section id="intro">
+  <div class="section-filter">
 
+  </div>
+</section> <!-- /SEKCJA intro -->
 
 
 <!-- SEKCJA poznajmy_sie -->
@@ -310,6 +315,24 @@ $( function() {
   });
 } );
 
+
+
+/* Smooth scroll */
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 </script>
 
